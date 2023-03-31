@@ -1,4 +1,4 @@
-# LeoECSLite Entity Descriptors - Создание ентити шаблонов для быстрого создания
+# LeoECSLite Entity Descriptors - Создание ентити через заранее описанный шаблон
 # Содержание
 * [Подключение](#Подключение)
 * [ComponentProvider](#ComponentProvider)
