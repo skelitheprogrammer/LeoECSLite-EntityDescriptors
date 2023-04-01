@@ -3,7 +3,7 @@ using Skillitronic.LeoECSLite.EntityDescriptors.ComponentProviders;
 
 namespace Skillitronic.LeoECSLite.EntityDescriptors
 {
-    public class EntityDescriptorExtender<T> : IComponentProvider where T : IEntityDescriptor, new()
+    public sealed class EntityDescriptorExtender<T> : IComponentProvider where T : IEntityDescriptor, new()
     {
         public void Provide(EcsWorld world, int entity)
         {
