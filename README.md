@@ -28,13 +28,19 @@ https://github.com/skelitheprogrammer/LeoECSLite-Entity-Descriptors.git
 Чтобы создавать ентити с помощью дескриптора, нужно объявить фабрику создания ентитей из дескрипторов.
 
 ```c#
-  IDescriptorEntityFactory entityFactory = new DescriptorEntityFactory();
-  int newEntity = entityFactory.Create(descriptor: new PlayerEntityDescriptor(), world: world);
+  EntityInitializer playerInit = entityFactory.Create<PlayerEntityDescriptor>(world: world); // ref struct позволяющий настраивать данные компонентов
+  int entity = playerInit.Entity;
+  
+  // Прокидывание данных
+  playerInit.InitComponent(new UnitPosition()
+  {
+    Position = new Vector3(1f,0,1f);
+  });
 ```
 
 # ComponentProvider 
 В основе любого дескриптора стоит набор провайдеров компонентов, которые будут описывать дескриптор.
->ComponentProvider унаследован от IComponentProvider интерфейса, что позволяет добавлять ваши варианты реализации (SO ассеты с прокидыванием кастомных данных к примеру)
+>ComponentProvider унаследован от IComponentProvider интерфейса
 ## Описание дескриптора
 ```c#
   public class PlayerEntityDescriptor : IEntityDescriptor
