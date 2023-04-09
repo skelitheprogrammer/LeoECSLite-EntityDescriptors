@@ -4,6 +4,6 @@ namespace Skillitronic.LeoECSLite.EntityDescriptors.Factory
 {
     public interface IDescriptorEntityFactory
     {
-        public int Create(IEntityDescriptor descriptor, EcsWorld world);
+        public EntityInitializer Create<T>(EcsWorld world) where T: IEntityDescriptor, new();
     }
 }
