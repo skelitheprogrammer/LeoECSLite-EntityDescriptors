@@ -1,0 +1,25 @@
+{
+    "name": "Skillitronic.LeoECSLite.EntityDescriptors.Editor.Tests",
+    "rootNamespace": "Skillitronic.LeoECSLite.EntityDescriptors.Editor.Tests",
+    "references": [
+        "GUID:7c26a3994c5313a4683080ee3f41e0dd",
+        "GUID:0acc523941302664db1f4e527237feb3",
+        "GUID:27619889b8ba8c24980f49ee34dbb44a",
+        "GUID:e59bf9fc7d5a44b18a819a92edd46163"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "nunit.framework.dll"
+    ],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
