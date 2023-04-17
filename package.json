@@ -15,7 +15,10 @@
     "LeoEcs",
     "utility"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "com.leopotam.ecslite": "2023.3.22",
+    "com.skillitronic.leoecscommon": "0.0.1"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/skelitheprogrammer/LeoECSLite-Entity-Descriptors.git"
