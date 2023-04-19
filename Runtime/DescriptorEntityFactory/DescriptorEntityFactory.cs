@@ -3,13 +3,18 @@ using Skillitronic.LeoECSLite.EntityDescriptors.ComponentProviders;
 
 namespace Skillitronic.LeoECSLite.EntityDescriptors.Factory
 {
-    public sealed class DescriptorEntityFactory : IDescriptorEntityFactory
+    public class DescriptorEntityFactory : IDescriptorEntityFactory
     {
         public EntityInitializer Create<T>(EcsWorld world) where T : IEntityDescriptor, new()
         {
+            T descriptor = new();
+            return Create(descriptor, world);
+        }
+
+        public EntityInitializer Create(IEntityDescriptor descriptor, EcsWorld world)
+        {
             int entity = world.NewEntity();
             
-            T descriptor = new();
             IComponentProvider[] componentProviders = descriptor.Components;
             
             for (int i = 0; i < componentProviders.Length; i++)
