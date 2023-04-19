@@ -34,7 +34,7 @@ https://github.com/skelitheprogrammer/LeoECSLite-EntityDescriptors.git
   int entity = playerInit.Entity;
   
   // Прокидывание данных
-  playerInit.InitComponent(new UnitPosition()
+  playerInit.InitComponent(new UnitPosition
   {
     Position = new Vector3(1f,0,1f);
   });
