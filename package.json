@@ -1,7 +1,7 @@
 {
   "name": "com.skillitronic.leoecsentitydescriptors",
   "displayName": "LeoECS Lite EntityDescriptors",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Create predefined entity templates",
   "keywords": [
     "unity",
@@ -16,8 +16,7 @@
     "utility"
   ],
   "dependencies": {
-    "com.leopotam.ecslite": "2023.3.22",
-    "com.skillitronic.leoecscommon": "0.0.1"
+    "com.leopotam.ecslite": "2023.3.22"
   },
   "repository": {
     "type": "git",
